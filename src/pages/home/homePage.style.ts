@@ -1,5 +1,5 @@
-import background from "../../assets/bgs/base.jpg"
-import banner from "../../assets/bgs/banner.png"
+import background from "../../assets/bgs/base.jpg";
+import banner from "../../assets/bgs/banner.png";
 
 export const homeStyle = () => {
     return {
@@ -14,7 +14,7 @@ export const homeStyle = () => {
         textAlign: "center",
         color: "white",
         position: "fixed",
-        background: "blue",
+        backgroundColor: "#611913",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -31,6 +31,7 @@ export const homeStyle = () => {
         display: "flex",
         flexDirection: "column-reverse",
         alignItems: "center",
+        boxShadow: "0px 0px 5px 0px black"
       },
 
       tabTitle: {
@@ -38,15 +39,14 @@ export const homeStyle = () => {
       },
   
       body: {
-        height: "calc(100% - 50px)",
-        //width: "80%",
+        height: "calc(100% - 300px)",
         width: "100%",
         position: "fixed",
         top: "250px",
-        backgroundColor: "#52646E",
-        alignSelf: "center",
-        backgroundImage: `url(${background})`,
+        backgroundColor: "#611913",
+        //backgroundImage: `url(${background})`,
         backgroundSize: "cover",
+        overflowY: "scroll"
       },
   
       footer: {
@@ -58,7 +58,8 @@ export const homeStyle = () => {
         display: "flex",
         flexDirection: "row",
         color: "#EBA731",
-        justifyContent: "center"
+        justifyContent: "center",
+        boxShadow: "0px 0px 5px 0px black"
       },
 
       contact: {
@@ -67,7 +68,8 @@ export const homeStyle = () => {
         alignItems: "center",
         marginRight: "12px",
         marginLeft: "12px",
-      },
+      },     
+      
     }
   };
   

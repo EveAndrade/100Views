@@ -1,10 +1,12 @@
 import * as React from "react";
 import { homeStyle } from "./homePage.style";
 import { defaultTheme } from "../defaultTheme";
+import * as DataBase from "../data"
 
 import DiscordIcon from "../../assets/icons/discordIcon";
 import FantasyIcon from "../../assets/icons/fantasyIcon";
 import TweetIcon from "../../assets/icons/tweetIcon";
+import CanvasCategory from "./homeContent/canvasCategory";
 
 import { ThemeProvider } from "@mui/material";
 import Box from "@mui/material/Box";
@@ -33,6 +35,8 @@ function HomePage() {
     setPageNumber(newValue);
   };
 
+  const fullData = DataBase.ART_CATEGORY;
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <Box sx={classes.root}>
@@ -40,6 +44,20 @@ function HomePage() {
           <Typography variant="h3">
             A Hundred Views of Fantasy
           </Typography>          
+        </Box>
+
+        <Box sx={classes.body}>
+          {pageNumber === 0 &&
+            <>
+              {fullData.map((cat, index) => {
+                <CanvasCategory
+                  category={cat}
+                  key={index}
+                />
+              })}
+            </>
+            
+          }
         </Box>
 
         <Box sx={classes.menu}>
@@ -73,50 +91,6 @@ function HomePage() {
               sx={classes.tabTitle}
             />
           </Tabs>
-        </Box>
-
-        
-
-        <Box sx={classes.body}>
-        <Box
-          hidden={pageNumber !== 0}
-        >
-          <Typography>
-            Home
-          </Typography>
-        </Box>
-
-        <Box
-          hidden={pageNumber !== 1}
-        >
-          <Typography>
-            Details
-          </Typography>
-        </Box>
-
-        <Box
-          hidden={pageNumber !== 2}
-        >
-          <Typography>
-            Gallery
-          </Typography>
-        </Box>
-
-        <Box
-          hidden={pageNumber !== 3}
-        >
-          <Typography>
-            ToS
-          </Typography>
-        </Box>
-        
-        <Box
-          hidden={pageNumber !== 4}
-        >
-          <Typography >
-            About
-          </Typography>
-        </Box>
         </Box>
 
         <Box sx={classes.footer}>
