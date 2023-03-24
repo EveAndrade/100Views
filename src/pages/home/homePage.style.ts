@@ -69,7 +69,6 @@ export const homeStyle = () => {
         marginRight: "12px",
         marginLeft: "12px",
       },     
-      
     }
   };
   

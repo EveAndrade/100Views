@@ -48,13 +48,21 @@ function HomePage() {
 
         <Box sx={classes.body}>
           {pageNumber === 0 &&
-            <>
-              {fullData.map((cat, index) => {
-                <CanvasCategory
-                  category={cat}
-                  key={index}
-                />
-              })}
+            <> 
+              {fullData.map((cat, index) => (
+                <>
+                  <CanvasCategory
+                    category={cat}
+                    id={index}
+                  />
+                  {(index !== fullData.length -1) &&
+                    <Divider
+                      sx={{ borderTopWidth: 8, bgcolor: "#eba731" }}
+                    />
+                  }
+                </>
+                
+              ))}              
             </>
             
           }

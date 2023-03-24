@@ -10,35 +10,36 @@ export const categoryStyle = () => {
             width: "100%",
             height: "100%",
             backgroundColor: "green"
-            },
+        },
 
-            centralDisplay: {
+        centralDisplay: {
             display:"flex",
             flexDirection: "column",
             width: "70%",
             height: "100%",
             backgroundColor: "blue",
-            },
+        },
 
-            basic:{},
-
-            textDisplay: {
+        textDisplay: {
             height: "20%",
             backgroundColor: "#611913",
-            },
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center"
+        },
 
-            infoPair: {
+        infoPair: {
             display: "flex",
             flexDirection: "row",
             justifyContent: "center"
-            },
+        },
 
-            paintingsDisplay: {
+        paintingsDisplay: {
             display:"flex",
             flexDirection: "row",
             backgroundColor: "red",
             height: "80%",
-            },
+        },
     }
   };
   
