@@ -1,5 +1,5 @@
 import { listingStyle } from "./details.style"
-import * as DataBase from "../../data";
+import * as DataBase from "../../../utils/data";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";

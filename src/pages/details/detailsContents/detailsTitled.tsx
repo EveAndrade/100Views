@@ -1,5 +1,5 @@
 import { listingStyle } from "./details.style"
-import * as DataBase from "../../data";
+import * as DataBase from "../../../utils/data";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -26,7 +26,7 @@ function DetailsTitled(prop: DetailsProp) {
             
             <Box sx={classes.reasons}>
                 {typeof detailList[1] !== "string" && detailList[1].map((content, index) => (
-                    <Box sx={classes.infoPair2}>
+                    <Box key={index} sx={classes.infoPair2}>
                         <Typography color={titleColor} variant="body1">
                             {`${index + 1}. ${content[0]}`}
                         </Typography>

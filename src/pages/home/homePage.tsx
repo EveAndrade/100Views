@@ -1,155 +1,104 @@
-import * as React from "react";
 import { homeStyle } from "./homePage.style";
-import { defaultTheme } from "../defaultTheme";
-import * as DataBase from "../data"
+import * as DataBase from "../../utils/data";
 
-import DiscordIcon from "../../assets/icons/discordIcon";
-import FantasyIcon from "../../assets/icons/fantasyIcon";
-import TweetIcon from "../../assets/icons/tweetIcon";
-
-import CanvasCategory from "./homeContent/canvasCategory";
-import AboutPage from "../about/aboutPage";
-import DetailsPage from "../details/detailsPage";
-
-import { ThemeProvider } from "@mui/material";
 import Box from "@mui/material/Box";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Divider from '@mui/material/Divider';
-
-import { Routes, Route } from "react-router-dom"
-
-
-
+import Carousel from 'react-material-ui-carousel';
 
 function HomePage() {
-  //const [count, setCount] = useState(0)
   const classes = homeStyle();
-  const [pageNumber, setPageNumber] = React.useState(0);
-  const pageType = DataBase.PageType;
   const fullData = DataBase.ART_CATEGORY;
-
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    setPageNumber(newValue);
-  };
-
-  
+  const paintingSlides = DataBase.ART_LIST;
+  const categoryBgs = DataBase.THEME_BACKGROUNDS;
+  const categoryLabel = DataBase.PAINTING_LABEL;
 
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <Box sx={classes.root}>
-        <Box sx={classes.header}>
-          <Typography variant="h3">
-            A Hundred Views of Fantasy
-          </Typography>          
-        </Box>
-
-        <Box sx={classes.body}>
-          {pageNumber === 0 &&
-            <> 
-              {fullData.map((cat, index) => (
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    height: "100%"
-                  }}
-                  key={index}
-                >
-                  <CanvasCategory
-                    category={cat}
-                    id={index}
-                  />
-                  {(index !== fullData.length -1) &&
-                    <Divider
-                      sx={{ borderTopWidth: 8, bgcolor: "#eba731" }}
-                    />
-                  }
-                </div>
-                
-              ))}              
-            </>
-            
-          }
-
-          {pageNumber === 1 &&
-            <DetailsPage/>
-          }
-
-          {pageNumber === 3 &&
-            <AboutPage/>
-          }
-        </Box>
-
-        <Box sx={classes.menu}>
-          <Tabs
-            value={pageNumber}
-            onChange={handleChange}
+    <> 
+      {fullData.map((cat, index) => (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            height: "100%"
+          }}
+          key={index}
+        >
+          <Box
+            sx={{
+              display:"flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              width: "100%",
+              height: "100%",
+              backgroundImage: `url(${categoryBgs[index]})`,
+              backgroundSize: "cover"
+            }}
           >
-            <Tab 
-              id={pageType.Home}
-              label="Home"
-              sx={classes.tabTitle}
-            />
-            <Tab 
-              id={pageType.Details}
-              label="Details"
-              sx={classes.tabTitle}
-            />
-            {/* <Tab 
-              id={pageType.Gallery}
-              label="Gallery"
-              sx={classes.tabTitle}
-            /> */}
-            <Tab 
-              id={pageType.ToS}
-              label="Tos"
-              sx={classes.tabTitle}
-            />
-            <Tab 
-              id={pageType.About}
-              label="About"
-              sx={classes.tabTitle}
-            />
-          </Tabs>
-        </Box>
+            <Box sx={classes.centralDisplay}>
+              <Box sx={classes.textDisplay}>
+                <Typography color="white" variant="h6" textAlign="center">
+                  {categoryLabel[index]}
+                </Typography>
 
-        <Box sx={classes.footer}>
-          <Box sx={classes.contact}>
-            <DiscordIcon/>
-            <Typography variant="body2">
-              Eve#8210
-            </Typography>
+                {cat.map((info, index) => (
+                  <Box key={index} sx={classes.infoPair}>
+                    <Typography color="white" variant="body1">
+                      {info[0]}
+                    </Typography>
+
+                    <Typography sx={{ color:"#EBA731", paddingTop:"2px", paddingLeft:"8px"}}variant="body2">
+                      {info[1]}
+                    </Typography>
+                  </Box>
+                ))}
+              </Box>
+                    
+              <Divider
+                sx={{ borderTopWidth: 4, bgcolor: "#EBA731" }}
+              />
+                    
+              <Box sx={classes.paintingsDisplay} >
+                <Carousel
+                  sx={classes.carouselDisplay}
+                  navButtonsAlwaysVisible={true}
+                  animation={"slide"}
+                  duration={600}
+                  navButtonsProps={{      
+                    style: {
+                        backgroundColor: "black",
+                        opacity: "60%",
+                    }
+                  }} 
+                >
+                  {
+                    paintingSlides[index].map((img, index) => (
+                      <Box
+                        key={index}
+                        sx={{
+                        width: "500px",
+                        height: "500px",
+                        backgroundColor: "white",
+                        backgroundImage: `url(${img})`,
+                        backgroundSize: "cover"
+                        }}
+                      />
+                    ))
+                  }
+                </Carousel>                  
+              </Box>
+            </Box>
           </Box>
 
-          <Divider
-            orientation="vertical"
-            sx={{ borderRightWidth: 2, bgcolor: "#eba731" }}
-          />
-
-          <Box sx={classes.contact}>
-            <TweetIcon/>
-            <Typography variant="body2">
-              @eve_pona
-            </Typography>
-          </Box>
-
-          <Divider
-            orientation="vertical"
-            sx={{ borderRightWidth: 2, bgcolor: "#eba731" }}
-          />
-         
-          <Box sx={classes.contact}>
-            <FantasyIcon/>
-            <Typography variant="body2">
-              Eve Silvermoon ❁ Behemoth [Primal]
-            </Typography>
-          </Box>
-          
-        </Box>
-      </Box>
-    </ThemeProvider>
+          {(index !== fullData.length -1) &&
+            <Divider
+              sx={{ borderTopWidth: 8, bgcolor: "#eba731" }}
+            />
+          }
+        </div>
+        
+      ))}              
+    </>
   )
 }
 
