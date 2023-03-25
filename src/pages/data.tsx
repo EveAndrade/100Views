@@ -45,6 +45,15 @@ export enum PaintingType {
     Sketch = 5,
 };
 
+export const PAINTING_LABEL = [
+    "Full Painting",
+    "Anime Screen",
+    "Manga Panel",
+    "Color Block",
+    "Traditional Inked",
+    "Digital Sketch"    
+];
+
 export const FULL_PAINTING_DETAIL = [
     ["Value:", "5.000.000 Gil"],
     ["Average Time:", "3 Weeks"],
@@ -111,3 +120,82 @@ export const ART_LIST = [
 ];
 
 export const THEME_BACKGROUNDS = [ bg1, bg2, bg3, bg4, bg5, bg6 ];
+
+export const COIN_DETAIL = [
+    "Huh? Why Gil?",
+    [
+        "I dont' feel comfortable neither confident enough to charge real money.",
+        "Game coin seems cheaper and less problematic (living abroad reasons).",
+        "The real goal is have a stimulus to keep drawing and comissions are one way to create a strong reason to finish what I'm scribbling, because I'm doing this for someone else."
+    ]
+];
+
+export const DOS_DETAIL = [
+    "Wacha open to do?",
+    [
+        [
+            "OCs:",
+            "I'm a humble tool that tries to portrait other people's amazing creations."
+        ],
+        [
+            "Create a new design from scratch with the comissioner:",
+            "May our imagination flow together. :D"
+        ],
+        [
+            "Fanarts:",
+            "We have our waifus/husbandos right?"
+        ],
+        [
+            "Try different art sryles:",
+            "Art nauveau, mosaic, pop art, furry, vapor wave? You name it and I'll do my best to try out. (WARNING: Chaotic results)"
+        ],
+        [
+            "Try different themes:",
+            "Games, anime, manga, music, movies, general literature, culture, or pick a new topic. :3 "
+        ],
+    ]
+];
+
+export const DONTS_DETAIL = [
+    "What you ゴゴゴREFUSEゴゴゴ?",
+    [
+        [
+            "NSFW:",
+            "Not comfortable to draw it"
+        ],
+        [
+            "Ecchi:",
+            "Not comfortable to draw it."
+        ],
+        [
+            "Gore:",
+            "Meh, not funny."
+        ],
+        [
+            "Politics and religion:",
+            "Leave this to the real world."
+        ],
+        [
+            "Offensive representation of minorities, social groups and cultures:",
+            "Let's be civil."
+        ],
+    ]
+];
+
+export const COMMUNICATION_DETAIL = [
+    "How can we talk about the comission?",
+    [
+        "Discord is the main open way to keep contact. Under unexpected situations I'll be providing alternative ways to contact.",
+        "Let's have a talk, even if it's a long one, to arrange the details before starting.",
+        " I'll be frequently sending previews at the start of the proccess to do early adjustments or just to check if it is what the client is expecting.",
+        "Close to the end I'll be sending zoomed in teasing previews to hype up a bit. If you rather not, for any reason, let me know please.",
+        "Any questions, changes, new ideas just DM me hmkay :3"
+    ]
+];
+
+export const DETAILS_LIST = [
+    COIN_DETAIL,
+    DOS_DETAIL,
+    DONTS_DETAIL,
+    COMMUNICATION_DETAIL
+];

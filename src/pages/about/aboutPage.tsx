@@ -67,12 +67,15 @@ function AboutPage() {
                             and draws random things in-between.
                         </Typography>
 
-                        <Typography color="#EBA731" variant="body1">
+                        <Typography color="#EBA731" variant="body1" marginBottom="24px">
                             I hope I can make your day a little better
                             with my scribbles. :D
                         </Typography>
-                    </Box>
 
+                        <Typography color="white" variant="caption">
+                            PS: Oh yeah, I did all the assets and coding for this, hope you like it ÓwÒ
+                        </Typography>
+                    </Box>
                 </Box>
             </Box>
         </Box> 

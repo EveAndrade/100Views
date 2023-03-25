@@ -13,7 +13,9 @@ export const categoryStyle = () => {
             backgroundColor: "#611913",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center"
+            justifyContent: "center",
+            flexWrap: "wrap",
+            alignContent: "center"
         },
 
         infoPair: {
@@ -29,7 +31,7 @@ export const categoryStyle = () => {
             flexWrap: "wrap",
             alignContent: "center",
             backgroundColor: "#380606",
-            height: "calc(80% - 4px)",
+            height: "80%",
         },
 
         carouselDisplay: {

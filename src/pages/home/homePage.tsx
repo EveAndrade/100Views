@@ -49,7 +49,14 @@ function HomePage() {
           {pageNumber === 0 &&
             <> 
               {fullData.map((cat, index) => (
-                <>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    height: "100%"
+                  }}
+                  key={index}
+                >
                   <CanvasCategory
                     category={cat}
                     id={index}
@@ -59,7 +66,7 @@ function HomePage() {
                       sx={{ borderTopWidth: 8, bgcolor: "#eba731" }}
                     />
                   }
-                </>
+                </div>
                 
               ))}              
             </>

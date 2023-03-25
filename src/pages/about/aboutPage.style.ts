@@ -1,4 +1,4 @@
-import background from "../../assets/bgs/base.jpg";
+import background from "../../assets/bgs/abobg.png";
 
 export const aboutStyle = () => {
     return {

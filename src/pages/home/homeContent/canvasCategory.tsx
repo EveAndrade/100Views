@@ -18,20 +18,27 @@ function CanvasCategory(prop: CanvasProp) {
   const classes = categoryStyle();
   const paintingSlides = DataBase.ART_LIST;
   const categoryBgs = DataBase.THEME_BACKGROUNDS;
+  const categoryLabel = DataBase.PAINTING_LABEL;
 
   return (
-    <ThemeProvider key={prop.id} theme={defaultTheme}>
-        <Box sx={{
-          display:"flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          width: "100%",
-          height: "100%",
-          backgroundImage: `url(${categoryBgs[prop.id]})`,
-          backgroundSize: "cover"
-        }}>
+    <ThemeProvider theme={defaultTheme}>
+        <Box
+          sx={{
+            display:"flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            width: "100%",
+            height: "100%",
+            backgroundImage: `url(${categoryBgs[prop.id]})`,
+            backgroundSize: "cover"
+          }}
+        >
             <Box sx={classes.centralDisplay}>
                 <Box sx={classes.textDisplay}>
+                  <Typography color="white" variant="h6" textAlign="center">
+                    {categoryLabel[prop.id]}
+                  </Typography>
+
                   {prop.category.map((info, index) => (
                     <Box key={index} sx={classes.infoPair}>
                       <Typography color="white" variant="body1">
