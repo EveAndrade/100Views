@@ -6,7 +6,10 @@ import * as DataBase from "../data"
 import DiscordIcon from "../../assets/icons/discordIcon";
 import FantasyIcon from "../../assets/icons/fantasyIcon";
 import TweetIcon from "../../assets/icons/tweetIcon";
+
 import CanvasCategory from "./homeContent/canvasCategory";
+import AboutPage from "../about/aboutPage";
+import DetailsPage from "../details/detailsPage";
 
 import { ThemeProvider } from "@mui/material";
 import Box from "@mui/material/Box";
@@ -18,24 +21,20 @@ import Divider from '@mui/material/Divider';
 import { Routes, Route } from "react-router-dom"
 
 
-enum Page {
-  Home = "0",
-  Details = "1",
-  Gallery = "2",
-  ToS = "3",
-  About = "4"
-}
+
 
 function HomePage() {
   //const [count, setCount] = useState(0)
   const classes = homeStyle();
   const [pageNumber, setPageNumber] = React.useState(0);
+  const pageType = DataBase.PageType;
+  const fullData = DataBase.ART_CATEGORY;
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setPageNumber(newValue);
   };
 
-  const fullData = DataBase.ART_CATEGORY;
+  
 
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -66,6 +65,14 @@ function HomePage() {
             </>
             
           }
+
+          {pageNumber === 1 &&
+            <DetailsPage/>
+          }
+
+          {pageNumber === 3 &&
+            <AboutPage/>
+          }
         </Box>
 
         <Box sx={classes.menu}>
@@ -74,27 +81,27 @@ function HomePage() {
             onChange={handleChange}
           >
             <Tab 
-              id={Page.Home}
+              id={pageType.Home}
               label="Home"
               sx={classes.tabTitle}
             />
             <Tab 
-              id={Page.Details}
+              id={pageType.Details}
               label="Details"
               sx={classes.tabTitle}
             />
-            <Tab 
-              id={Page.Gallery}
+            {/* <Tab 
+              id={pageType.Gallery}
               label="Gallery"
               sx={classes.tabTitle}
-            />
+            /> */}
             <Tab 
-              id={Page.ToS}
+              id={pageType.ToS}
               label="Tos"
               sx={classes.tabTitle}
             />
             <Tab 
-              id={Page.About}
+              id={pageType.About}
               label="About"
               sx={classes.tabTitle}
             />

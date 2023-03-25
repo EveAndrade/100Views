@@ -1,23 +1,11 @@
-import background from "../../assets/bgs/base.jpg"
-import banner from "../../assets/bgs/banner.png"
-
 export const categoryStyle = () => {
     return {
-        categoryDisplay: {
-            display:"flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            width: "100%",
-            height: "100%",
-            backgroundColor: "green"
-        },
-
         centralDisplay: {
             display:"flex",
             flexDirection: "column",
             width: "70%",
             height: "100%",
-            backgroundColor: "blue",
+            backgroundColor: "611913",
         },
 
         textDisplay: {
@@ -37,8 +25,17 @@ export const categoryStyle = () => {
         paintingsDisplay: {
             display:"flex",
             flexDirection: "row",
-            backgroundColor: "red",
-            height: "80%",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            alignContent: "center",
+            backgroundColor: "#380606",
+            height: "calc(80% - 4px)",
+        },
+
+        carouselDisplay: {
+            width: "500px",
+            height: "500px",
+            overflow: "hidden",
         },
     }
   };

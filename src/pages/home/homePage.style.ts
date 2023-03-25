@@ -1,4 +1,3 @@
-import background from "../../assets/bgs/base.jpg";
 import banner from "../../assets/bgs/banner.png";
 
 export const homeStyle = () => {
@@ -44,9 +43,8 @@ export const homeStyle = () => {
         position: "fixed",
         top: "250px",
         backgroundColor: "#611913",
-        //backgroundImage: `url(${background})`,
         backgroundSize: "cover",
-        overflowY: "scroll"
+        overflowY: "auto"
       },
   
       footer: {
