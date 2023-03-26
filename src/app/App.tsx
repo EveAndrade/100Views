@@ -45,7 +45,7 @@ function App() {
 
         <Box sx={classes.body}>
           <Routes>
-            <Route path="/" element={<HomePage/>} />
+            <Route path="/100Views" element={<HomePage/>} />
             <Route path="/details" element={<DetailsPage/>} />
             <Route path="/tos" element={<TOSPage/>} />
             <Route path="/about" element={<AboutPage/>} />
@@ -62,7 +62,7 @@ function App() {
               id={pageType.Home}
               label="Home"
               sx={classes.tabTitle}
-              onClick={() => navigate("/", { replace: true })}
+              onClick={() => navigate("/100Views", { replace: true })}
             />
 
             <Tab 
