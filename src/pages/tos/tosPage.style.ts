@@ -1,4 +1,4 @@
-import background from "../../assets/bgs/tosbg.png";
+import background from "/bgs/tosbg.png";
 
 export const tosStyle = () => {
     return {

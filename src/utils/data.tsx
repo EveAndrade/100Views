@@ -1,33 +1,33 @@
-import a1 from "../assets/arts/animeScreen/a1.png";
-import a2 from "../assets/arts/animeScreen/a2.png";
-import a3 from "../assets/arts/animeScreen/a3.png";
+import a1 from "/arts/animeScreen/a1.png";
+import a2 from "/arts/animeScreen/a2.png";
+import a3 from "/arts/animeScreen/a3.png";
 
-import c1 from "../assets/arts/colorBlock/c1.png";
-import c2 from "../assets/arts/colorBlock/c2.png";
-import c3 from "../assets/arts/colorBlock/c3.png";
+import c1 from "/arts/colorBlock/c1.png";
+import c2 from "/arts/colorBlock/c2.png";
+import c3 from "/arts/colorBlock/c3.png";
 
-import d1 from "../assets/arts/digitalSketch/d1.png";
-import d2 from "../assets/arts/digitalSketch/d2.png";
-import d3 from "../assets/arts/digitalSketch/d3.png";
+import d1 from "/arts/digitalSketch/d1.png";
+import d2 from "/arts/digitalSketch/d2.png";
+import d3 from "/arts/digitalSketch/d3.png";
 
-import f1 from "../assets/arts/fullPainting/f1.png";
-import f2 from "../assets/arts/fullPainting/f2.png";
-import f3 from "../assets/arts/fullPainting/f3.png";
+import f1 from "/arts/fullPainting/f1.png";
+import f2 from "/arts/fullPainting/f2.png";
+import f3 from "/arts/fullPainting/f3.png";
 
-import m1 from "../assets/arts/mangaPanel/m1.png";
-import m2 from "../assets/arts/mangaPanel/m2.png";
-import m3 from "../assets/arts/mangaPanel/m3.png";
+import m1 from "/arts/mangaPanel/m1.png";
+import m2 from "/arts/mangaPanel/m2.png";
+import m3 from "/arts/mangaPanel/m3.png";
 
-import t1 from "../assets/arts/TraditionalInked/t1.jpg";
-import t2 from "../assets/arts/TraditionalInked/t2.jpg";
-import t3 from "../assets/arts/TraditionalInked/t3.jpg";
+import t1 from "/arts/traditionalInked/t1.jpg";
+import t2 from "/arts/traditionalInked/t2.jpg";
+import t3 from "/arts/traditionalInked/t3.jpg";
 
-import bg1 from "../assets/bgs/bg1.png";
-import bg2 from "../assets/bgs/bg2.png";
-import bg3 from "../assets/bgs/bg3.png";
-import bg4 from "../assets/bgs/bg4.png";
-import bg5 from "../assets/bgs/bg5.jpg";
-import bg6 from "../assets/bgs/bg6.png";
+import bg1 from "/bgs/bg1.png";
+import bg2 from "/bgs/bg2.png";
+import bg3 from "/bgs/bg3.png";
+import bg4 from "/bgs/bg4.png";
+import bg5 from "/bgs/bg5.jpg";
+import bg6 from "/bgs/bg6.png";
 
 export enum PageType {
     Home = "0",

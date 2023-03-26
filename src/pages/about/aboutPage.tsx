@@ -1,5 +1,5 @@
 import { aboutStyle } from "./aboutPage.style";
-import profile from "../../assets/bgs/profile.png";
+import profile from "/bgs/profile.png";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";

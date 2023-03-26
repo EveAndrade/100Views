@@ -4,9 +4,9 @@ import { appStyle } from "./App.style";
 import { defaultTheme } from "../utils/defaultTheme";
 import * as DataBase from "../utils/data"
 
-import DiscordIcon from "../assets/icons/discordIcon";
-import FantasyIcon from "../assets/icons/fantasyIcon";
-import TweetIcon from "../assets/icons/tweetIcon";
+import DiscordIcon from "../../public/icons/discordIcon";
+import FantasyIcon from "../../public/icons/fantasyIcon";
+import TweetIcon from "../../public/icons/tweetIcon";
 
 import HomePage from "../pages/home/homePage";
 import DetailsPage from "../pages/details/detailsPage";

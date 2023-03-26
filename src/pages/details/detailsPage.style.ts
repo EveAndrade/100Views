@@ -1,4 +1,4 @@
-import background from "../../assets/bgs/detbg.png";
+import background from "/bgs/detbg.png";
 
 export const detailsStyle = () => {
     return {

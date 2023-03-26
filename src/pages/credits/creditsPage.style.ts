@@ -1,4 +1,4 @@
-import background from "../../assets/bgs/credbg.png";
+import background from "/bgs/credbg.png";
 
 export const creditsStyle = () => {
     return {

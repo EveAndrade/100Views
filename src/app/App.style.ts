@@ -1,4 +1,4 @@
-import banner from "../assets/bgs/banner.png";
+import banner from "/bgs/banner.png";
 
 export const appStyle = () => {
     return {
