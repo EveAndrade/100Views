@@ -18,7 +18,42 @@ export const tosStyle = () => {
             flexDirection: "column",
             width: "70%",
             height: "100%",
+        },
+
+        display: {
+            height: "auto",
+            width: "100%",
+            display: "flex",
+            flexDirection:"column",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            alignItems: "center",
             backgroundColor: "#611913",
+        },
+
+        question: {
+            textAlign: "center",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            height: "auto",
+            width: "30%",
+            marginTop: "12px"
+        },
+
+        reasons: {
+            height: "auto",
+            width: "70%",
+            display: "flex",
+            flexDirection: "column",
+            margin: "12px",
+            alignItems: "flex-start",
+        },
+
+        infoPair: {
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center"
         },
     }
   };

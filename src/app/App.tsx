@@ -12,7 +12,7 @@ import HomePage from "../pages/home/homePage";
 import DetailsPage from "../pages/details/detailsPage";
 import TOSPage from "../pages/tos/tosPage";
 import AboutPage from "../pages/about/aboutPage";
-
+import CreditsPage from "../pages/credits/creditsPage";
 
 import { ThemeProvider } from "@mui/material";
 import Box from "@mui/material/Box";
@@ -49,6 +49,7 @@ function App() {
             <Route path="/details" element={<DetailsPage/>} />
             <Route path="/tos" element={<TOSPage/>} />
             <Route path="/about" element={<AboutPage/>} />
+            <Route path="/credits" element={<CreditsPage/>} />
           </Routes>
         </Box>
 
@@ -82,6 +83,12 @@ function App() {
               label="About"
               sx={classes.tabTitle}
               onClick={() => navigate("/about", { replace: true })}
+            />
+            <Tab 
+              id={pageType.Credits}
+              label="Credits"
+              sx={classes.tabTitle}
+              onClick={() => navigate("/credits", { replace: true })}
             />
           </Tabs>
         </Box>

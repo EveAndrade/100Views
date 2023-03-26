@@ -59,7 +59,7 @@ function AboutPage() {
                     </Typography>
 
                     <Typography color="white" variant="caption">
-                        PS: Oh yeah, I did all the assets and coding for this, hope you like it ÓwÒ
+                        PS: Oh yeah, I did all the assets and coding, hope you like it ÓwÒ
                     </Typography>
                 </Box>
             </Box>

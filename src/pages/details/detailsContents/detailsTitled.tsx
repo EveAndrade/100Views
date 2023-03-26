@@ -13,9 +13,10 @@ function DetailsTitled(prop: DetailsProp) {
     const classes = listingStyle();
     const detailList = DataBase.DETAILS_LIST[prop.id];
     const display = prop.colorType === 0 ? classes.detailDisplayRed : classes.detailDisplayYellow;
-    const titleColor = prop.colorType === 0 ? "white" : "#611913";
+    const titleColor = prop.colorType === 0 ? "#611913" : "white";
     const textColor = prop.colorType === 0 ? "#EBA731" : "white";
-
+    const numberColor = prop.colorType === 0 ? "white" : "#611913";
+    
     return (   
         <Box sx={display}>
             <Box sx={classes.question}>
@@ -27,7 +28,7 @@ function DetailsTitled(prop: DetailsProp) {
             <Box sx={classes.reasons}>
                 {typeof detailList[1] !== "string" && detailList[1].map((content, index) => (
                     <Box key={index} sx={classes.infoPair2}>
-                        <Typography color={titleColor} variant="body1">
+                        <Typography color={numberColor} variant="body1">
                             {`${index + 1}. ${content[0]}`}
                         </Typography>
 

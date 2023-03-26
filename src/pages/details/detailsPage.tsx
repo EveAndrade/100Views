@@ -4,6 +4,7 @@ import DetailsListing from "./detailsContents/detailsListing";
 import DetailsTitled from "./detailsContents/detailsTitled";
 
 import Box from "@mui/material/Box";
+import Divider from '@mui/material/Divider';
 
 function DetailsPage() {
   const classes = detailsStyle();
@@ -16,18 +17,30 @@ function DetailsPage() {
                     id={0}
                 />
 
+                <Divider
+                    sx={{ borderTopWidth: 4, bgcolor: "white" }}
+                 />
+
                 <DetailsTitled
-                    colorType={1}
+                    colorType={0}
                     id={1}
                 />
                 
+                <Divider
+                    sx={{ borderTopWidth: 4, bgcolor: "white" }}
+                 />
+
                 <DetailsTitled
                     colorType={0}
                     id={2}
                 />
 
+                <Divider
+                    sx={{ borderTopWidth: 4, bgcolor: "white" }}
+                 />
+
                 <DetailsListing
-                    colorType={1}
+                    colorType={0}
                     id={3}
                 />
             </Box>

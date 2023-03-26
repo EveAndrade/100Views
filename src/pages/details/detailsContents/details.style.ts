@@ -25,6 +25,7 @@ export const listingStyle = () => {
             justifyContent: "center",
             height: "auto",
             width: "30%",
+            backgroundColor: "#EBA731"
         },
 
         reasons: {
