@@ -45,11 +45,11 @@ function App() {
 
         <Box sx={classes.body}>
           <Routes>
-            <Route path="eveandrade.github.io/100Views" element={<HomePage/>} />
-            <Route path="eveandrade.github.io/100Views/details" element={<DetailsPage/>} />
-            <Route path="eveandrade.github.io/100Views/tos" element={<TOSPage/>} />
-            <Route path="eveandrade.github.io/100Views/about" element={<AboutPage/>} />
-            <Route path="eveandrade.github.io/100Views/credits" element={<CreditsPage/>} />
+            <Route path="eveandrade.github.io/100Views/" element={<HomePage/>} />
+            <Route path="eveandrade.github.io/100Views/details/" element={<DetailsPage/>} />
+            <Route path="eveandrade.github.io/100Views/tos/" element={<TOSPage/>} />
+            <Route path="eveandrade.github.io/100Views/about/" element={<AboutPage/>} />
+            <Route path="eveandrade.github.io/100Views/credits/" element={<CreditsPage/>} />
           </Routes>
         </Box>
 
@@ -62,33 +62,33 @@ function App() {
               id={pageType.Home}
               label="Home"
               sx={classes.tabTitle}
-              onClick={() => navigate("eveandrade.github.io/100Views", { replace: true })}
+              onClick={() => navigate("eveandrade.github.io/100Views/", { replace: true })}
             />
 
             <Tab 
               id={pageType.Details}
               label="Details"
               sx={classes.tabTitle}
-              onClick={() => navigate("eveandrade.github.io/100Views/details", { replace: true })}
+              onClick={() => navigate("eveandrade.github.io/100Views/details/", { replace: true })}
             />
             
             <Tab 
               id={pageType.ToS}
               label="Tos"
               sx={classes.tabTitle}
-              onClick={() => navigate("eveandrade.github.io/100Views/tos", { replace: true })}
+              onClick={() => navigate("eveandrade.github.io/100Views/tos/", { replace: true })}
             />
             <Tab 
               id={pageType.About}
               label="About"
               sx={classes.tabTitle}
-              onClick={() => navigate("eveandrade.github.io/100Views/about", { replace: true })}
+              onClick={() => navigate("eveandrade.github.io/100Views/about/", { replace: true })}
             />
             <Tab 
               id={pageType.Credits}
               label="Credits"
               sx={classes.tabTitle}
-              onClick={() => navigate("eveandrade.github.io/100Views/credits", { replace: true })}
+              onClick={() => navigate("eveandrade.github.io/100Views/credits/", { replace: true })}
             />
           </Tabs>
         </Box>
