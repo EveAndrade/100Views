@@ -20,7 +20,7 @@ function HomePage() {
           style={{
             display: "flex",
             flexDirection: "column",
-            height: "100%"
+            height: "auto"
           }}
           key={index}
         >

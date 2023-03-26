@@ -169,8 +169,8 @@ export const DONTS_DETAIL = [
             "Not comfortable to draw it."
         ],
         [
-            "Gore:",
-            "Meh, not funny."
+            "Extreme gore:",
+            "Keep the guts inside, please."
         ],
         [
             "Politics and religion:",
@@ -206,7 +206,7 @@ export const PROVIDING_DETAIL = [
     [
         "A nice description. Go on detailing everything you need.",
         "Sample images to the details of the commission are desirable.",
-        "In case of game characters, as Final Fantasy XIV, a list of the cosmetic equipments and prints are desirable.",
+        "In case of game characters, as Final Fantasy XIV, a list of the cosmetic equipments and screenshots are desirable.",
         "Let the artist (Eve) know as soon as possible about any changes."
     ]
 ];
@@ -225,7 +225,7 @@ export const ILL_GIVE_DETAIL = [
 export const WORKING_PROCESS_DETAIL = [
     "Working process",
     [
-        "SKETCH STAGE - A mess of maybe identifiable scribbles. Best stage for big changes.",
+        "SKETCH STAGE - A mess of barely identifiable scribbles. Best stage for big changes.",
         "LINEART STAGE - Smooth defined lines of the main featured subject. Partially good stage for changes.",
         "COLOR BLOCKING STAGE - Base colors put on canvas of the main featured subject. Best stage for color changing.",
         "SHADING STAGE - Line coloring, texture addition and lights/shadows casting of the main featured subject. Changes advised ONLY early in the stage.",
@@ -252,7 +252,7 @@ export const CONVO_DETAILS = [
     [
         "BEFORE the commission starts, the artist (Eve) try to set as many details as possible with the commissioner.",
         "Be aware that any offensive behavior will not be tolerated and the commission will be refused or canceled if it occurs.",
-        "If the commissioner's approval is needed for any changes and/or suggestions, the commission will be put \"ON HOLD\", i.e. its progress is stoppend and the estimated time will be increased, until an answer is given. If a long time is taken, the commission will be deprioritized or even canceled, with refunds following the \"In case of WITHDRAW \" statements.",
+        "If the commissioner's approval is needed for any changes and/or suggestions, the commission will be put \"ON HOLD\", i.e. its progress is stopped and the estimated time will be increased, until an answer is given. If a long time is taken, the commission will be deprioritized or even canceled, with refunds following the \"In case of WITHDRAW \" statements.",
         "In case of technical and/or personal problems, the artist (Eve) will provide alternative means of contacting.",
         "Both artist and commissioner are human beings. Transparency and honesty are the key for a nice cooperation.",
         "Any question, changes and/or suggestions just message. :)",
@@ -265,7 +265,7 @@ export const PAYMENT_DETAIL = [
     [
         "After the details are set and BEFORE the starting of the commission, half of the total value must be paid.",
         "The second half must be paid when the commission is done. The art will be send AFTER the payment is completed.",
-        "Additional payments due to changes must be made immediately. The commission will be put \"ON HOLD\", i.e. its progress is stoppend and the estimated time will be increased, until the payment is made.",
+        "Additional payments due to changes must be made immediately. The commission will be put \"ON HOLD\", i.e. its progress is stopped and the estimated time will be increased, until the payment is made.",
         "If the artist (Eve) really likes the theme or suggested design discounts will be offered.",
     ]
 ];
@@ -296,10 +296,10 @@ export const CAN_DETAIL = [
 ];
 
 export const CANT_DETAIL = [
-    "What you CAN'T do with the commission",
+    "What you CAN'T do with the commission AND/OR intermediate previews",
     [
         "Trace, recolor and/or offensively edit the image aiming to assault the artist (Eve), another person or what is being representend in the art.",
-        "Purposefully remove the watermark and/or the signature with the intention of not giving credit or appropriating the creation of the art and/or without the artist 9Eve) permission.",
+        "Purposefully remove the watermark and/or the signature with the intention of not giving credit or appropriating the creation of the art and/or without the artist (Eve) permission.",
         "Turn the art into merchandise with commercial purposes.",
         "Use the art to NFT and/or AI programs. HUGE NO!"
     ]

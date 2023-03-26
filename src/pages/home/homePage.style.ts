@@ -9,13 +9,14 @@ export const homeStyle = () => {
     },
 
     textDisplay: {
-        height: "20%",
+        height: "auto",
         backgroundColor: "#611913",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         flexWrap: "wrap",
-        alignContent: "center"
+        alignContent: "center",
+        padding: "12px"
     },
 
     infoPair: {
@@ -31,7 +32,7 @@ export const homeStyle = () => {
         flexWrap: "wrap",
         alignContent: "center",
         backgroundColor: "#380606",
-        height: "80%",
+        height: "auto",
     },
 
     carouselDisplay: {
