@@ -41,12 +41,36 @@ export const creditsStyle = () => {
             marginTop: "12px"
         },
 
+        questionText: {
+            fontSize: {
+                xs: "0.9rem",
+                md: "1rem",
+                xl: "1.1rem",
+                giga: "1.2rem",
+                gamer: "1.3rem",
+                wider: "1.4rem"
+            }
+        },
+
         reasons: {
             height: "auto",
             width: "70%",
             display: "flex",
             flexDirection: "column",
             margin: "12px",
+        },
+
+        reasonsText: {
+            fontSize: {
+                xs: "0.8rem",
+                md: "0.9rem",
+                xl: "1rem",
+                giga: "1.1rem",
+                gamer: "1.2rem",
+                wider: "1.3rem"
+            },
+            paddingLeft:"8px",
+            marginBottom:"8px"
         },
 
         infoPair: {

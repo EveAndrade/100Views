@@ -3,8 +3,8 @@ import * as DataBase from "../../utils/data";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Divider from '@mui/material/Divider';
-import Carousel from 'react-material-ui-carousel';
+import Divider from "@mui/material/Divider";
+import Carousel from "react-material-ui-carousel";
 
 function HomePage() {
   const classes = homeStyle();
@@ -16,38 +16,30 @@ function HomePage() {
   return (
     <> 
       {fullData.map((cat, index) => (
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            height: "auto"
-          }}
-          key={index}
-        >
+        <div key={index}>
           <Box
             sx={{
               display:"flex",
               flexDirection: "row",
               justifyContent: "center",
               width: "100%",
-              height: "100%",
               backgroundImage: `url(${categoryBgs[index]})`,
               backgroundSize: "cover"
             }}
           >
             <Box sx={classes.centralDisplay}>
               <Box sx={classes.textDisplay}>
-                <Typography color="white" variant="h6" textAlign="center">
+                <Typography  sx={classes.categoryText}>
                   {categoryLabel[index]}
                 </Typography>
 
                 {cat.map((info, index) => (
                   <Box key={index} sx={classes.infoPair}>
-                    <Typography color="white" variant="body1">
+                    <Typography sx={classes.infoType}>
                       {info[0]}
                     </Typography>
 
-                    <Typography sx={{ color:"#EBA731", paddingTop:"2px", paddingLeft:"8px"}}variant="body2">
+                    <Typography sx={classes.infoValue}variant="body2">
                       {info[1]}
                     </Typography>
                   </Box>
@@ -63,7 +55,7 @@ function HomePage() {
                   sx={classes.carouselDisplay}
                   navButtonsAlwaysVisible={true}
                   animation={"slide"}
-                  duration={600}
+                  duration={700}
                   navButtonsProps={{      
                     style: {
                         backgroundColor: "black",
@@ -76,11 +68,13 @@ function HomePage() {
                       <Box
                         key={index}
                         sx={{
-                        width: "500px",
-                        height: "500px",
-                        backgroundColor: "white",
-                        backgroundImage: `url(${img})`,
-                        backgroundSize: "cover"
+                          width: window.innerWidth > window.innerHeight ?
+                            "100vh" : "calc(100vw*0.7)",
+                          height: window.innerWidth > window.innerHeight ?
+                            "100vh" : "calc(100vw*0.7)",
+                          backgroundColor: "white",
+                          backgroundImage: `url(${img})`,
+                          backgroundSize: "cover"
                         }}
                       />
                     ))

@@ -20,7 +20,7 @@ function DetailsTitled(prop: DetailsProp) {
     return (   
         <Box sx={display}>
             <Box sx={classes.question}>
-                <Typography color={titleColor} variant="h6">
+                <Typography color={titleColor} sx={classes.questionText}>
                     {detailList[0]}
                 </Typography>          
             </Box>
@@ -28,14 +28,14 @@ function DetailsTitled(prop: DetailsProp) {
             <Box sx={classes.reasons}>
                 {typeof detailList[1] !== "string" && detailList[1].map((content, index) => (
                     <Box key={index} sx={classes.infoPair2}>
-                        <Typography color={numberColor} variant="body1">
+
+                        <Typography color={numberColor} sx={classes.reasonText}>
                             {`${index + 1}. ${content[0]}`}
                         </Typography>
 
                         <Typography
                             color={textColor}
-                            sx={{ paddingLeft:"8px", marginBottom:"8px"}}
-                            variant="body2"
+                            sx={classes.reasonTextPadded}
                         >
                             {content[1]}
                         </Typography>

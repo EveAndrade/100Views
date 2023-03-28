@@ -12,8 +12,8 @@ function AboutPage() {
         <Box sx={classes.centralDisplay}>
             <Box sx={classes.profileDisplay}>
                 <Box sx={classes.greetings}>
-                    <Typography variant="h3">
-                        Hello
+                    <Typography sx={classes.greetingsText}>
+                        Hello There
                     </Typography>          
                 </Box>
                 
@@ -21,44 +21,49 @@ function AboutPage() {
                     <Box
                         sx={{
                             borderRadius: "50%",
-                            width: "350px",
-                            height: "350px",
+                            width: window.innerWidth > window.innerHeight ?
+                                "calc(100vh*0.3)" : "calc(100vw*0.3)",
+                            height: window.innerWidth > window.innerHeight ?
+                                "calc(100vh*0.3)" : "calc(100vw*0.3)",
                             backgroundImage: `url(${profile})`,
-                            backgroundSize: "cover"
+                            backgroundSize: "cover",
                         }}
                     />
-                </Box>
-
-                <Box sx={classes.greetings}>
-                    <Typography variant="h3">
-                        There
-                    </Typography> 
                 </Box>
             </Box>
 
             <Box sx={classes.descriptionDisplay}>
-                <Box sx={classes.mainText}>
-                    <Typography color="white" variant="h6" marginBottom="36px">
+                <Box sx={{
+                    textAlign: "center",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    height: "auto",
+                    marginBottom:"16px"
+                }}>
+                    <Typography color="white" sx={classes.greetingsText}>
                         Who?
                     </Typography>
-
-                    <Typography color="#EBA731" variant="body1" marginBottom="8px">
+                </Box>
+            
+                <Box sx={classes.mainText}>
+                    <Typography color="#EBA731" sx={classes.sillyText}>
                         I'm Eve, nice to meet ya ~
                     </Typography>
                     
-                    <Typography color="#EBA731" variant="body1" marginBottom="8px">
+                    <Typography color="#EBA731" sx={classes.sillyText}>
                         I'm a 25 years old human being that works
                         as a programmer during the day,
                         punches bad monsters during the night
                         and draws random things in-between.
                     </Typography>
 
-                    <Typography color="#EBA731" variant="body1" marginBottom="24px">
+                    <Typography color="#EBA731" sx={classes.sillyText}>
                         I hope I can make your day a little better
                         with my scribbles. :D
                     </Typography>
 
-                    <Typography color="white" variant="caption">
+                    <Typography color="white" sx={classes.sillyPS}>
                         PS: Oh yeah, I did all the assets and coding, hope you like it ÓwÒ
                     </Typography>
                 </Box>

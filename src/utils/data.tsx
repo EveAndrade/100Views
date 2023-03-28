@@ -29,7 +29,7 @@ import bg4 from "/bgs/bg4.png";
 import bg5 from "/bgs/bg5.jpg";
 import bg6 from "/bgs/bg6.png";
 
-export enum PageType {
+export enum PageType{
     Home = "0",
     Details = "1",
     ToS = "2",
@@ -58,40 +58,40 @@ export const PAINTING_LABEL = [
 export const FULL_PAINTING_DETAIL = [
     ["Value:", "5.000.000 Gil"],
     ["Average Time:", "3 Weeks"],
-    ["Dimensions:", "1500px 1500px 600dpi png"],
+    ["Dimensions:", "1500 x 1500px 600dpi png"],
     ["Background Option:", "Yes"]
 ];
 export const ANIME_SCREEN_DETAIL = [
     ["Value:", "3.000.000 Gil"],
     ["Average Time:", "2 Weeks"],
-    ["Dimensions:", "1500px 1500px 600dpi png"],
+    ["Dimensions:", "1500 x 1500px 600dpi png"],
     ["Background Option:", "Yes"]
 ];
 export const MANGA_PANEL_DETAIL = [
     ["Value:", "2.000.000 Gil"],
     ["Average Time:", "1.5 Week"],
-    ["Dimensions:", "1500px 1500px 600dpi png"],
+    ["Dimensions:", "1500 x 1500px 600dpi png"],
     ["Background Option:", "Yes"]
 ];
 
 export const COLOR_BLOCK_DETAIL = [
     ["Value:", "700.000 Gil"],
     ["Average Time:", "5 days"],
-    ["Dimensions:", "1500px 1500px 600dpi png"],
+    ["Dimensions:", "1500 x 1500px 600dpi png"],
     ["Background Option:", "No"]
 ];
 
 export const TRADITIONAL_INKED_DETAIL = [
     ["Value:", "500.000 Gil"],
     ["Average Time:", "2 days"],
-    ["Dimensions:", "960px x 1280px jpg"],
+    ["Dimensions:", "960 x 1280px jpg"],
     ["Background Option:", "Yes"]
 ];
 
 export const DIGITAL_SKETCH_DETAIL = [
     ["Value:", "200.000 Gil"],
     ["Average Time:", "3 days"],
-    ["Dimensions:", "1500px 1500px 600dpi png"],
+    ["Dimensions:", "1500 x 1500px 600dpi png"],
     ["Background Option:", "No"]
 ];
 

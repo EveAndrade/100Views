@@ -5,7 +5,7 @@ export const listingStyle = () => {
             width: "100%",
             backgroundColor: "#611913",
             display: "flex",
-            flexDirection:"row",
+            flexDirection:"column",
             justifyContent: "center",
         },
 
@@ -14,7 +14,7 @@ export const listingStyle = () => {
             width: "100%",
             backgroundColor: "#EBA731",
             display: "flex",
-            flexDirection:"row",
+            flexDirection:"column",
             justifyContent: "center",
         },
 
@@ -24,17 +24,51 @@ export const listingStyle = () => {
             flexDirection: "column",
             justifyContent: "center",
             height: "auto",
-            width: "30%",
-            backgroundColor: "#EBA731"
+            backgroundColor: "#EBA731",
+            padding: "8px"
+        },
+
+        questionText: {
+            fontSize: {
+                xs: "0.9rem",
+                md: "1rem",
+                xl: "1.1rem",
+                giga: "1.2rem",
+                gamer: "1.3rem",
+                wider: "1.4rem"
+            },
         },
 
         reasons: {
             height: "auto",
-            width: "70%",
             display: "flex",
             flexDirection: "column",
-            margin: "12px",
+            margin: "16px",
             alignItems: "flex-start",
+        },
+
+        reasonText: {
+            fontSize: {
+                xs: "0.8rem",
+                md: "0.9rem",
+                xl: "1rem",
+                giga: "1.1rem",
+                gamer: "1.2rem",
+                wider: "1.3rem"
+            },
+        },
+
+        reasonTextPadded: {
+            fontSize: {
+                xs: "0.8rem",
+                md: "0.9rem",
+                xl: "1rem",
+                giga: "1.1rem",
+                gamer: "1.2rem",
+                wider: "1.3rem"
+            },
+            paddingLeft:"8px",
+            marginBottom:"8px"
         },
 
         infoPair: {

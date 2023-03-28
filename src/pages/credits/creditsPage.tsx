@@ -13,10 +13,10 @@ function CreditsPage() {
         <Box sx={classes.centralBox}>
             <Box sx={classes.centralDisplay}>
                 {termsList.map((term, index) => (
-                    <>
-                        <Box key={index} sx={classes.display}>
+                    <div key={index}>
+                        <Box sx={classes.display}>
                             <Box sx={classes.question}>
-                                <Typography color="white" variant="h6">
+                                <Typography color="white" sx={classes.questionText}>
                                     {term[0]}
                                 </Typography>          
                             </Box>
@@ -26,7 +26,7 @@ function CreditsPage() {
                                     <Box key={index} sx={classes.infoPair}>
                                         <Typography
                                             color="#EBA731"
-                                            sx={{ paddingLeft:"8px", marginBottom:"8px"}}
+                                            sx={classes.reasonsText}
                                             variant="body2"
                                         >
                                             {content}
@@ -41,7 +41,7 @@ function CreditsPage() {
                                 sx={{ borderTopWidth: 4, bgcolor: "white" }}
                             />
                         }
-                    </>
+                    </div>
                 ))}
             </Box>
         </Box> 

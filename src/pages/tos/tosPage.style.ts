@@ -10,7 +10,6 @@ export const tosStyle = () => {
             height: "100%",
             backgroundImage: `url(${background})`,
             backgroundSize: "cover",
-            overflowY: "auto"
         },
 
         centralDisplay: {
@@ -26,8 +25,6 @@ export const tosStyle = () => {
             display: "flex",
             flexDirection:"column",
             justifyContent: "center",
-            flexWrap: "wrap",
-            alignItems: "center",
             backgroundColor: "#611913",
         },
 
@@ -37,8 +34,19 @@ export const tosStyle = () => {
             flexDirection: "column",
             justifyContent: "center",
             height: "auto",
-            width: "30%",
-            marginTop: "12px"
+            padding: "8px",
+            backgroundColor: "#EBA731",
+        },
+
+        questionText: {
+            fontSize: {
+                xs: "0.9rem",
+                md: "1rem",
+                xl: "1.1rem",
+                giga: "1.2rem",
+                gamer: "1.3rem",
+                wider: "1.4rem"
+            },
         },
 
         reasons: {
@@ -48,6 +56,30 @@ export const tosStyle = () => {
             flexDirection: "column",
             margin: "12px",
             alignItems: "flex-start",
+        },
+
+        reasonText: {
+            fontSize: {
+                xs: "0.8rem",
+                md: "0.9rem",
+                xl: "1rem",
+                giga: "1.1rem",
+                gamer: "1.2rem",
+                wider: "1.3rem"
+            },
+        },
+
+        reasonTextPadded: {
+            fontSize: {
+                xs: "0.8rem",
+                md: "0.9rem",
+                xl: "1rem",
+                giga: "1.1rem",
+                gamer: "1.2rem",
+                wider: "1.3rem"
+            },
+            paddingLeft:"8px",
+            marginBottom:"8px"
         },
 
         infoPair: {
