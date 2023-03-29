@@ -23,14 +23,10 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from "@mui/material/Typography";
 import Divider from '@mui/material/Divider';
 
-// import { Routes, Route, useNavigate } from "react-router-dom"
-
-
 function App() {
   const classes = appStyle();
   const [pageNumber, setPageNumber] = React.useState(0);
   const pageType = DataBase.PageType;
-  // let navigate = useNavigate();
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setPageNumber(newValue);
@@ -59,43 +55,31 @@ function App() {
             id={pageType.Home}
             label="Home"
             sx={classes.tabTitle}
-            // onClick={() => navigate("/", { replace: true })}
           />
 
           <Tab 
             id={pageType.Details}
             label="Details"
             sx={classes.tabTitle}
-            // onClick={() => navigate("/details", { replace: true })}
           />
           
           <Tab 
             id={pageType.ToS}
             label="Tos"
             sx={classes.tabTitle}
-            // onClick={() => navigate("/tos", { replace: true })}
           />
           <Tab 
             id={pageType.About}
             label="About"
             sx={classes.tabTitle}
-            // onClick={() => navigate("/about", { replace: true })}
           />
           <Tab 
             id={pageType.Credits}
             label="Credits"
             sx={classes.tabTitle}
-            // onClick={() => navigate("/credits", { replace: true })}
           />
         </Tabs>
         <Box sx={classes.body}>
-          {/* <Routes>
-            <Route path="/" element={<HomePage/>} />
-            <Route path="/details" element={<DetailsPage/>} />
-            <Route path="/tos" element={<TOSPage/>} />
-            <Route path="/about" element={<AboutPage/>} />
-            <Route path="/credits" element={<CreditsPage/>} />
-          </Routes> */}
           {pageNumber === 0 &&
             <HomePage/>
           }
