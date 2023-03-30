@@ -6,7 +6,6 @@ export const appStyle = () => {
         display:"grid",
         width: "100%",
         height: "100%",
-        overflowY: "auto"
       },
   
       header: {
@@ -100,6 +99,52 @@ export const appStyle = () => {
           gamer: "1.1rem",
           wider: "1.2rem"
         },
+      },
+
+      scrollTop: {
+        position: "fixed",
+        bottom: "calc(100vh/2)",
+        right: {
+          xs: "12px",
+          sm: "18px",
+          md: "24px"
+        },
+        zIndex: 1
+      },
+
+      scrollBottom: {
+        position: "fixed",
+        bottom: {
+          xs: "calc(100vh/2 + 56px)",
+          sm: "calc(100vh/2 + 66px)",
+          md: "calc(100vh/2 + 76px)",
+          lg: "calc(100vh/2 + 86px)",
+        },
+        right: {
+          xs: "12px",
+          sm: "18px",
+          md: "24px"
+        },
+        zIndex: 1
+      },
+
+      autoScrollFab: {
+        height: {
+          xs: "32px",
+          sm: "42px",
+          md: "52px",
+          lg: "62px",
+        },
+        width: {
+          xs: "32px",
+          sm: "42px",
+          md: "52px",
+          lg: "62px",
+        },
+        backgroundColor: "#611913",
+        "&:hover": {
+          backgroundColor: "#EBA731",
+        }
       }
     }
   };
