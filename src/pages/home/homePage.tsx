@@ -69,9 +69,9 @@ function HomePage() {
                         key={index}
                         sx={{
                           width: window.innerWidth > window.innerHeight ?
-                            "100vh" : "calc(100vw*0.7)",
+                            "calc(100vh - 48px)" : "calc(100vw*0.7)",
                           height: window.innerWidth > window.innerHeight ?
-                            "100vh" : "calc(100vw*0.7)",
+                            "calc(100vh - 48px)" : "calc(100vw*0.7)",
                           backgroundColor: "white",
                           backgroundImage: `url(${img})`,
                           backgroundSize: "cover"

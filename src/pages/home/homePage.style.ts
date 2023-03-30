@@ -71,9 +71,9 @@ export const homeStyle = () => {
 
     carouselDisplay: {        
         width: window.innerWidth > window.innerHeight ?
-            "100vh" : "calc(100vw*0.7)",
+            "calc(100vh - 48px)" : "calc(100vw*0.7)",
         height: window.innerWidth > window.innerHeight ?
-            "calc(100vh + 48px)" : "calc(100vw*0.7 + 48px)",
+            "calc(100vh)" : "calc(100vw*0.7 + 48px)",
         overflow: "hidden",
     },
     
