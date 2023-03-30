@@ -4,6 +4,8 @@ export const homeStyle = () => {
         width: "70%",
         height: "100%",
         backgroundColor: "611913",
+        boxShadow: "0 0 24px 0px black",
+        clipPath: "inset(0px -15px 0px -15px)"
     },
 
     textDisplay: {
