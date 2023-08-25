@@ -103,7 +103,7 @@ function App() {
               <Box sx={classes.contact}>
                 <DiscordIcon/>
                 <Typography sx={classes.contactText}>
-                  Eve#8210
+                  .eveknight
                 </Typography>
               </Box>
 

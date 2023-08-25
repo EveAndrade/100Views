@@ -1,26 +1,43 @@
 import a1 from "/arts/animeScreen/a1.png";
 import a2 from "/arts/animeScreen/a2.png";
 import a3 from "/arts/animeScreen/a3.png";
+import a4 from "/arts/animeScreen/a4.png";
+import a5 from "/arts/animeScreen/a5.png";
+import a6 from "/arts/animeScreen/a6.png";
 
 import c1 from "/arts/colorBlock/c1.png";
 import c2 from "/arts/colorBlock/c2.png";
 import c3 from "/arts/colorBlock/c3.png";
+import c4 from "/arts/colorBlock/c4.png";
+import c5 from "/arts/colorBlock/c5.png";
 
 import d1 from "/arts/digitalSketch/d1.png";
 import d2 from "/arts/digitalSketch/d2.png";
 import d3 from "/arts/digitalSketch/d3.png";
+import d4 from "/arts/digitalSketch/d4.png";
 
 import f1 from "/arts/fullPainting/f1.png";
 import f2 from "/arts/fullPainting/f2.png";
 import f3 from "/arts/fullPainting/f3.png";
+import f4 from "/arts/fullPainting/f4.png";
+import f5 from "/arts/fullPainting/f5.png";
+import f6 from "/arts/fullPainting/f6.png";
+import f7 from "/arts/fullPainting/f7.png";
+import f8 from "/arts/fullPainting/f8.png";
+import f9 from "/arts/fullPainting/f9.png";
+import f10 from "/arts/fullPainting/f10.png";
+import f11 from "/arts/fullPainting/f11.png";
 
 import m1 from "/arts/mangaPanel/m1.png";
 import m2 from "/arts/mangaPanel/m2.png";
 import m3 from "/arts/mangaPanel/m3.png";
+import m4 from "/arts/mangaPanel/m4.png";
+import m5 from "/arts/mangaPanel/m5.png";
 
 import t1 from "/arts/traditionalInked/t1.jpg";
 import t2 from "/arts/traditionalInked/t2.jpg";
 import t3 from "/arts/traditionalInked/t3.jpg";
+import t4 from "/arts/traditionalInked/t4.jpg";
 
 import bg1 from "/bgs/bg1.png";
 import bg2 from "/bgs/bg2.png";
@@ -104,12 +121,12 @@ export const ART_CATEGORY = [
     DIGITAL_SKETCH_DETAIL
 ];
 
-export const FULL_PAINTING_SLIDES = [ f1, f2, f3 ];
-export const ANIME_SCREEN_SLIDES = [ a1, a2, a3 ];
-export const MANGA_PANEL_SLIDES = [ m1, m2, m3 ];
-export const COLOR_BLOCK_SLIDES = [ c1, c2, c3 ];
-export const TRADITIONAL_INKED_SLIDES = [ t1, t2, t3 ];
-export const DIGITAL_SKETCH_SLIDES = [ d1, d2, d3 ];
+export const FULL_PAINTING_SLIDES = [ f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11 ];
+export const ANIME_SCREEN_SLIDES = [ a1, a2, a3, a4, a5, a6 ];
+export const MANGA_PANEL_SLIDES = [ m1, m2, m3, m4, m5 ];
+export const COLOR_BLOCK_SLIDES = [ c1, c2, c3, c4, c5 ];
+export const TRADITIONAL_INKED_SLIDES = [ t1, t2, t3, t4 ];
+export const DIGITAL_SKETCH_SLIDES = [ d1, d2, d3, d4 ];
 
 export const ART_LIST = [
     FULL_PAINTING_SLIDES,
@@ -218,7 +235,7 @@ export const ILL_GIVE_DETAIL = [
         "I will suggest myself changes, that won't affect the estimated time, during early stages and ask for the commissioner's approval.",
         "At the finish of the commission and payments I'll be sending you a .zip file with the art to preserve its quality.",
         "I'll be sharing the art on my own social networks and/or other platforms. In case of an art really personal to the commissioner this won't be done and their privacy will be respected.",
-        "Original creations, ideas and concepts given by the commissioner WILL be credited back do them, but not the resulting art itself."
+        "Original creations, ideas and concepts given by the commissioner WILL be credited back to them, but not the resulting art itself."
     ]
 ];
 
@@ -328,19 +345,39 @@ export const TOS_LIST = [
 
 export const CREDITS_LIST = [
     ["Mat", [
-        "Full Painting 1st Art OC",
-        "Manga Panel 2nd Art OC"
+        "Full Painting 1st, 2nd and 9th Art OC",
+        "Manga Panel 4th Art OC"
     ]],
-    ["Dio", ["Full Painting 3rd Art OC"]],
-    ["Elrien", ["Anime Screen 1st Art OC"]],
-    ["Papito", ["Anime Screen 3rd Art OC"]],
-    ["Caramel Coffee", ["Traditional Inked 1st Art OC"]],
-    ["Zera", ["Traditional Inked 2nd Art OC"]],
+    ["Dio", ["Full Painting 4th Art OC"]],
+    ["Piwan", ["Full Painting 6th Art OC"]],
+    ["Kosmo", ["Full Painting 10th Art OC"]],
+    ["Yonna", [
+        "Anime Screen 1st and 4th Art OC",
+        "Traditional Inked 1st Art OC"
+    ]],
+    ["Dengue", ["Anime Screen 2nd Art OC"]],
+    ["Elrien", ["Anime Screen 3rd Art OC"]],
+    ["Papito", ["Anime Screen 5th Art OC"]],
+    ["KasaiAi", [
+        "Full Painting 8th and 7th Art OC",
+        "Color Block 3rd Art 2nd character OC"
+    ]],
+    ["Yohei", [
+        "Full Painting 11th Art OC",,
+        "Color Block 3rd Art 3rd character OC"
+    ]],
+    ["ySummer", ["Digital Sketch 2nd Art OC"]],
+    ["Caramel Coffee", ["Traditional Inked 2nd Art OC"]],
+    ["Zera", ["Traditional Inked 3rd Art OC"]],
     ["Fate/Grand Order | TYPE MOON",[
-        "Manga Panel 1st Art Property",
-        "Manga Panel 3rd Art Property",
-        "Color Block 1st Art Property",
+        "Manga Panel 1st and 5th Art Property",
+        "Color Block 4th Art Property",
         "Digital Sketch 2nd Art Property"
     ]],
-    ["SINoAlice | Nier",["Color Block 3rd Art Property"]]
+    ["SINoAlice | Nier",[
+        "Manga Panel 3rd Art Property",
+        "Color Block 3rd Art Property",
+    ]],
+    ["Faraway Paladin | Kanata Yanagino", ["Full Painting 5th Art Property"]],
+    ["Touhou Project | ZUN", ["Digital Sketch 1st Art Property"]],
 ];
