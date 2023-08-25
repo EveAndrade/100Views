@@ -345,7 +345,7 @@ export const TOS_LIST = [
 
 export const CREDITS_LIST = [
     ["Mat", [
-        "Full Painting 1st, 2nd and 9th Art OC",
+        "Full Painting 1st, 2nd and 9th Art OCs",
         "Manga Panel 4th Art OC"
     ]],
     ["Dio", ["Full Painting 4th Art OC"]],
@@ -359,18 +359,18 @@ export const CREDITS_LIST = [
     ["Elrien", ["Anime Screen 3rd Art OC"]],
     ["Papito", ["Anime Screen 5th Art OC"]],
     ["KasaiAi", [
-        "Full Painting 8th and 7th Art OC",
+        "Full Painting 8th and 7th Art OCs",
         "Color Block 3rd Art 2nd character OC"
     ]],
     ["Yohei", [
-        "Full Painting 11th Art OC",,
+        "Full Painting 11th Art OC",
         "Color Block 3rd Art 3rd character OC"
     ]],
     ["ySummer", ["Digital Sketch 2nd Art OC"]],
     ["Caramel Coffee", ["Traditional Inked 2nd Art OC"]],
     ["Zera", ["Traditional Inked 3rd Art OC"]],
     ["Fate/Grand Order | TYPE MOON",[
-        "Manga Panel 1st and 5th Art Property",
+        "Manga Panel 1st and 5th Art Properties",
         "Color Block 4th Art Property",
         "Digital Sketch 2nd Art Property"
     ]],
